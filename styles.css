@@ -836,49 +836,50 @@ justify-content: space-evenly;
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; filter: none; }
 }
-/* =========================================================
-   TABLET RESPONSIVE — 1024px and below
-   ========================================================= */
-
-@media (max-width: 1024px) {
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
 
   .container {
-    padding: 0 24px;
+    padding: 0 20px;
   }
 
   .section {
     padding: 90px 0;
   }
 
-  /* ---------- Navigation ---------- */
-
+  /* NAV */
   .nav {
-    width: calc(100% - 32px);
     top: 18px;
+    width: calc(100% - 32px);
     height: 58px;
+    padding: 0 16px;
+  }
+
+  .logoimg {
+    width: 100px;
+    height: auto;
   }
 
   .menu {
-    width: calc(100% - 32px);
     top: 18px;
+    width: calc(100% - 32px);
     height: 360px;
-    padding: 100px 30px 40px;
+    padding: 100px 30px 30px;
   }
 
-  /* ---------- Hero ---------- */
-
+  /* HERO */
   .hero {
     margin: 5px 8px 0;
-    min-height: 650px;
+    min-height: 620px;
     height: calc(100vh - 5px);
   }
 
   .hero-inner {
-    padding: 140px 35px 60px;
+    padding: 130px 30px 55px;
   }
 
   .hero-title {
-    font-size: clamp(48px, 7vw, 68px);
+    font-size: clamp(44px, 7vw, 64px);
   }
 
   .hero-bottom {
@@ -886,141 +887,76 @@ justify-content: space-evenly;
     max-width: 500px;
   }
 
-  .hero-bottom p {
-    font-size: 19px;
-  }
-
   .asterisk {
     width: 65px;
     height: 65px;
   }
 
-  /* ---------- Logos ---------- */
-
-  .marquee-track {
-    gap: 55px;
+  .hero-bottom p {
+    font-size: 19px;
   }
 
-  .brand {
-    font-size: 22px;
-  }
-
-  /* ---------- Values ---------- */
-
-  .values .h2 {
-    margin-bottom: 50px;
-  }
-
+  /* VALUES */
   .values-grid {
-    gap: 16px;
+    grid-template-columns: 1fr;
   }
 
   .vcard {
     min-height: 400px;
-    padding: 26px 22px;
   }
 
-  .vcard-text {
-    font-size: 16px;
-  }
-
-  /* ---------- Dark / Accordion ---------- */
-
-  .split .h2 {
-    margin-bottom: 55px;
-  }
-
-  .accordion {
-    padding: 1.5rem;
-  }
-
-  .acc-head {
-    font-size: 18px;
-  }
-
-  .acc-body > p {
-    font-size: 16px;
-  }
-
-  /* ---------- Services ---------- */
-
+  /* SERVICES */
   .services-grid {
-    gap: 18px;
+    grid-template-columns: 1fr;
   }
 
-  .scard {
-    padding: 14px 14px 18px;
-  }
-
-  .scard h3 {
-    font-size: 24px;
-  }
-
-  /* ---------- About ---------- */
-
+  /* ABOUT */
   .about-bottom {
-    gap: 20px;
+    grid-template-columns: 1fr;
   }
 
   .about-imgs {
-    gap: 16px;
+    margin-top: 30px;
   }
 
-  .about-stat p:first-child {
-    font-size: 18px;
-  }
-
-  /* ---------- Eco section ---------- */
-
+  /* ECO */
   .main-video {
-    width: calc(100% - 20px);
-    height: 25rem;
+    width: 100%;
+    height: 24rem;
   }
 
   .small-card {
     left: auto;
-    right: 30px;
+    right: 25px;
     width: 360px;
   }
 
-  /* ---------- Features ---------- */
-
+  /* FEATURES */
   .features {
-    gap: 18px;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .fcard {
-    padding: 20px;
-  }
-
-  .fcard img {
-    margin-bottom: 45px;
-  }
-
-  /* ---------- Stats ---------- */
-
+  /* STATS */
   .stats-grid {
-    grid-auto-rows: 230px;
-    gap: 16px;
-    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 240px;
   }
 
-  .stat {
-    padding: 24px;
+  .s-a,
+  .s-b,
+  .s-c,
+  .s-d,
+  .s-e,
+  .s-f,
+  .s-g,
+  .s-h {
+    grid-column: auto;
+    grid-row: auto;
   }
 
-  .stat-num {
-    font-size: 52px;
-  }
-
-  /* ---------- Testimonials ---------- */
-
-  .slider {
-    max-width: 100%;
-  }
-
+  /* TESTIMONIAL */
   .slide {
-    gap: 24px;
+    gap: 25px;
     min-height: 430px;
   }
 
@@ -1029,98 +965,54 @@ justify-content: space-evenly;
     height: 390px;
   }
 
-  .client-content {
-    padding: 22px 20px 22px 0;
-  }
-
-  .slide blockquote {
-    font-size: 18px;
-    line-height: 1.7;
-  }
-
-  /* ---------- CTA ---------- */
-
+  /* CTA */
   .cta {
-    min-height: 800px;
+    min-height: 850px;
   }
 
   .cta-inner {
-    padding-top: 240px;
-    max-width: 520px;
+    padding-top: 260px;
   }
 
   .f1 {
-    width: 120px;
-    height: 120px;
     left: 3rem;
   }
 
-  .f2 {
-    width: 80px;
-    height: 80px;
-  }
-
   .f3 {
-    width: 180px;
-    height: 220px;
     right: 2%;
   }
 
   .f4 {
-    width: 180px;
-    height: 220px;
     left: 2%;
   }
 
-  .f5 {
-    width: 80px;
-    height: 80px;
-  }
-
   .f6 {
-    width: 120px;
-    height: 120px;
     right: 5%;
   }
 
-  /* ---------- Blog ---------- */
-
+  /* BLOG */
   .blog-grid {
-    gap: 16px;
-    margin-top: 60px;
+    grid-template-columns: 1fr;
   }
 
-  .post h3 {
-    font-size: 21px;
-  }
-
-  /* ---------- Footer ---------- */
-
-  .footer-email {
-    padding: 45px 30px;
-  }
-
+  /* FOOTER */
   .footer-grid {
-    padding: 0 20px;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0;
   }
-
-  .footer {
-    padding: 35px 30px;
-  }
-
 }
 
-/* =========================================================
-   PHONE RESPONSIVE — 767px and below
-   ========================================================= */
 
-@media (max-width: 767px) {
+/* =========================================
+   MOBILE
+========================================= */
 
-  /* ---------- General ---------- */
+@media (max-width: 600px) {
 
+  /* GENERAL */
   .container {
-    padding: 0 18px;
+    padding: 0 16px;
   }
 
   .section {
@@ -1128,36 +1020,27 @@ justify-content: space-evenly;
   }
 
   .h2 {
-    font-size: clamp(36px, 10vw, 52px);
-    line-height: 1.12;
+    font-size: clamp(36px, 10vw, 48px);
+    line-height: 1.1;
   }
 
   .lead {
     font-size: 22px;
-    line-height: 1.4;
   }
 
-  .eyebrow {
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
 
-  /* ---------- Navigation ---------- */
+  /* ---------- NAV ---------- */
 
   .nav {
-    width: calc(100% - 24px);
     top: 12px;
+    width: calc(100% - 24px);
     height: 54px;
-    padding: 0 15px;
-    border-radius: 10px;
-  }
-
-  .logo {
-    font-size: 18px;
+    padding: 0 14px;
+    border-radius: 12px;
   }
 
   .logoimg {
-    width: 90px;
+    width: 92px;
     height: auto;
   }
 
@@ -1166,20 +1049,24 @@ justify-content: space-evenly;
     height: 20px;
   }
 
+  .burger span:nth-child(2) {
+    width: 60%;
+  }
+
   .menu {
-    width: calc(100% - 24px);
     top: 12px;
-    height: 390px;
-    padding: 90px 20px 30px;
+    width: calc(100% - 24px);
+    height: 330px;
+    padding: 85px 20px 25px;
     border-radius: 16px;
   }
 
   .menu ul {
-    gap: 20px;
+    gap: 18px;
   }
 
   .menu a {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .menu .contact-btn {
@@ -1187,47 +1074,55 @@ justify-content: space-evenly;
     font-size: 15px;
   }
 
-  /* ---------- Hero ---------- */
+
+  /* ---------- HERO ---------- */
 
   .hero {
-    margin: 4px 5px 0;
+    margin: 4px 6px 0;
     min-height: 650px;
     height: calc(100svh - 4px);
-    border-radius: 16px;
+    border-radius: 18px;
   }
 
   .hero-inner {
-    padding: 105px 22px 35px;
+    padding: 105px 20px 35px;
   }
 
   .hero-title {
     font-size: clamp(42px, 12vw, 58px);
-    line-height: 1.04;
+    line-height: 1.05;
     letter-spacing: -0.045em;
   }
 
   .hero-bottom {
     width: 100%;
-    max-width: none;
+    display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
   }
 
   .asterisk {
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
   }
 
   .hero-bottom p {
-    font-size: 17px;
-    line-height: 1.5;
-    max-width: 330px;
-    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 1.45;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
+
+  .hero-bottom .btn {
+    align-self: flex-start;
+  }
+
+
+  /* ---------- BUTTON ---------- */
 
   .btn {
     height: 48px;
-    padding: 0 22px;
+    padding: 0 23px;
     font-size: 14px;
   }
 
@@ -1235,30 +1130,31 @@ justify-content: space-evenly;
     line-height: 48px;
   }
 
-  /* ---------- Logos ---------- */
+
+  /* ---------- LOGOS ---------- */
 
   .logos {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 
   .marquee-track {
-    gap: 40px;
-    animation-duration: 24s;
+    gap: 45px;
   }
 
   .brand {
-    font-size: 18px;
+    font-size: 21px;
   }
 
   .brand svg {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
   }
 
-  /* ---------- Values ---------- */
+
+  /* ---------- VALUES ---------- */
 
   .values .h2 {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 
   .values-grid {
@@ -1269,11 +1165,11 @@ justify-content: space-evenly;
   .vcard {
     min-height: 360px;
     padding: 24px 20px;
+    border-radius: 18px;
   }
 
   .vcard-img {
-    min-height: 320px;
-    max-height: none;
+    min-height: 330px;
   }
 
   .vcard h3 {
@@ -1282,23 +1178,13 @@ justify-content: space-evenly;
 
   .vcard-text {
     font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
   }
 
-  .pill {
-    padding: 10px 13px;
-    font-size: 13px;
-  }
 
-  /* ---------- Dark Sections ---------- */
+  /* ---------- DARK / ACCORDION ---------- */
 
   .split .h2 {
-    margin-bottom: 40px;
-  }
-
-  .darktext {
-    text-align: center;
+    margin-bottom: 45px;
   }
 
   .accordion {
@@ -1308,37 +1194,27 @@ justify-content: space-evenly;
 
   .acc-head {
     padding: 14px 0 14px 14px;
-    font-size: 17px;
+    font-size: 18px;
     gap: 15px;
   }
 
-  .acc-icon {
-    width: 30px;
-    height: 30px;
-  }
-
   .acc-body > p {
-    padding: 0 40px 0 14px;
-    font-size: 15px;
-    line-height: 1.5;
+    padding-left: 14px;
+    padding-right: 35px;
+    font-size: 16px;
   }
 
   .acc-item.open .acc-body > p {
     padding-bottom: 16px;
   }
 
-  .reviews {
-    font-size: 13px;
-    padding: 4px 14px 4px 4px;
+  .acc-icon {
+    width: 29px;
+    height: 29px;
   }
 
-  .avatars img,
-  .avatars .plus {
-    width: 34px;
-    height: 34px;
-  }
 
-  /* ---------- Services ---------- */
+  /* ---------- SERVICES ---------- */
 
   .services-top {
     gap: 15px;
@@ -1359,16 +1235,17 @@ justify-content: space-evenly;
 
   .scard {
     padding: 12px 12px 18px;
+    border-radius: 18px;
   }
 
   .scard-img,
   .scard-lg .scard-img {
-    aspect-ratio: 1.25 / 1;
+    aspect-ratio: 1 / .78;
     margin-bottom: 16px;
   }
 
   .scard h3 {
-    font-size: 23px;
+    font-size: 24px;
     margin-bottom: 12px;
   }
 
@@ -1376,10 +1253,11 @@ justify-content: space-evenly;
     font-size: 15px;
   }
 
-  /* ---------- About ---------- */
+
+  /* ---------- ABOUT ---------- */
 
   .about {
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   .about-top {
@@ -1395,37 +1273,28 @@ justify-content: space-evenly;
     gap: 35px;
   }
 
-  .about-stat p:first-child {
-    font-size: 17px;
-    line-height: 1.7;
-  }
-
-  .big-num {
-    font-size: 42px;
-    margin-top: 18px;
-  }
-
   .about-imgs {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
 
   .about-imgs img {
-    border-radius: 15px;
+    border-radius: 16px;
   }
 
-  /* ---------- Eco Section ---------- */
-
-  .eco-media {
-    width: 100%;
+  .big-num {
+    font-size: 40px;
   }
+
+
+  /* ---------- ECO ---------- */
 
   .main-video {
     width: 100%;
-    height: 260px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 18px;
+    height: 240px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
   }
 
   .small-card {
@@ -1434,19 +1303,17 @@ justify-content: space-evenly;
     right: auto;
     top: auto;
     width: 100%;
-    margin-top: -40px;
-    padding: 12px;
-    padding-bottom: 18px;
-    border-radius: 18px;
+    margin-top: -70px;
+    border-radius: 20px;
+    padding: 10px;
   }
 
   .small-card img {
-    height: 170px;
-    border-radius: 13px;
+    height: 180px;
   }
 
   .small-card-text {
-    padding: 8px 5px;
+    padding: 10px 8px;
   }
 
   .small-card-text h3 {
@@ -1454,14 +1321,15 @@ justify-content: space-evenly;
   }
 
   .small-card-text p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  /* ---------- Features ---------- */
+
+  /* ---------- FEATURES ---------- */
 
   .features-sub {
-    margin: 20px 0 45px;
     font-size: 16px;
+    margin: 20px 0 45px;
   }
 
   .features {
@@ -1474,80 +1342,47 @@ justify-content: space-evenly;
   }
 
   .fcard img {
-    width: 36px;
-    height: 36px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
-  .fcard h3 {
-    font-size: 19px;
-    margin-bottom: 14px;
-  }
 
-  .fcard p {
-    font-size: 15px;
-  }
-
-  /* ---------- Stats ---------- */
-
-  .static-sec .stats-lead {
-    max-width: 100%;
-  }
+  /* ---------- STATS ---------- */
 
   .stats-lead {
     padding: 0;
-    margin-bottom: 25px;
-    font-size: 21px;
+    margin-bottom: 20px;
   }
 
   .stats-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 180px;
-    gap: 10px;
-    margin-top: 40px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+    gap: 14px;
+    margin-top: 45px;
   }
 
   .stat {
-    padding: 18px;
+    padding: 24px;
+    border-radius: 18px;
   }
 
   .stat-num {
-    font-size: 42px;
+    font-size: 50px;
   }
 
   .stat p:last-child {
-    font-size: 13px;
-    line-height: 1.4;
-  }
-
-  .dot {
-    width: 9px;
-    height: 9px;
-    top: 10px;
-    right: 10px;
+    font-size: 15px;
   }
 
   .arc {
-    width: 130px;
+    width: 170px;
   }
 
-  .s-a,
-  .s-b,
-  .s-c,
-  .s-d,
-  .s-e,
-  .s-f,
-  .s-g,
-  .s-h {
-    grid-column: auto;
-    grid-row: auto;
-  }
 
-  /* ---------- Testimonials ---------- */
+  /* ---------- TESTIMONIALS ---------- */
 
   .slider {
-    width: 100%;
-    margin-top: 40px;
+    max-width: 100%;
+    margin-top: 45px;
   }
 
   .slide {
@@ -1555,13 +1390,13 @@ justify-content: space-evenly;
     gap: 20px;
     min-height: auto;
     padding: 12px;
-    border-radius: 16px;
+    border-radius: 18px;
   }
 
   .client-image {
     flex: none;
     width: 100%;
-    height: 280px;
+    height: 270px;
   }
 
   .client-image img {
@@ -1569,7 +1404,7 @@ justify-content: space-evenly;
   }
 
   .client-content {
-    padding: 12px 10px 20px;
+    padding: 10px 10px 20px;
   }
 
   .stars {
@@ -1579,20 +1414,12 @@ justify-content: space-evenly;
   }
 
   .slide blockquote {
-    font-size: 17px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 1.7;
   }
 
   .slide figcaption {
-    margin-top: 30px;
-  }
-
-  .slide figcaption strong {
-    font-size: 18px;
-  }
-
-  .slide figcaption span {
-    font-size: 14px;
+    margin-top: 35px;
   }
 
   .slider-arrows {
@@ -1604,11 +1431,12 @@ justify-content: space-evenly;
     height: 44px;
   }
 
+
   /* ---------- CTA ---------- */
 
   .cta {
-    min-height: 720px;
-    padding: 0 5px;
+    min-height: 700px;
+    padding: 0 6px;
   }
 
   .cta-inner {
@@ -1618,7 +1446,8 @@ justify-content: space-evenly;
   }
 
   .cta-inner > p {
-    font-size: 13px;
+    font-size: 14px;
+    max-width: 340px;
     margin: 20px auto 25px;
   }
 
@@ -1631,61 +1460,66 @@ justify-content: space-evenly;
   }
 
   .f1 {
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
     top: 70px;
-    left: 15px;
+    left: 10px;
   }
 
   .f2 {
-    width: 60px;
-    height: 60px;
-    top: 40px;
-    left: 44%;
+    width: 65px;
+    height: 65px;
+    top: 30px;
+    left: 47%;
   }
 
   .f3 {
     width: 105px;
     height: 135px;
-    top: 55px;
-    right: 10px;
+    top: 80px;
+    right: 5px;
   }
 
   .f4 {
     width: 105px;
     height: 135px;
-    bottom: 20px;
-    left: 10px;
+    bottom: 30px;
+    left: 5px;
   }
 
   .f5 {
     width: 65px;
     height: 65px;
-    bottom: 30px;
+    bottom: 20px;
     left: 38%;
   }
 
   .f6 {
-    width: 85px;
-    height: 85px;
-    bottom: 50px;
-    right: 15px;
+    width: 90px;
+    height: 90px;
+    bottom: 55px;
+    right: 5px;
   }
 
-  /* ---------- Blog ---------- */
+
+  /* ---------- BLOG ---------- */
 
   .blog-grid {
     grid-template-columns: 1fr;
-    gap: 35px;
-    margin-top: 45px;
+    gap: 45px;
+    margin-top: 50px;
   }
 
   .post-img {
     margin-bottom: 20px;
+    border-radius: 18px;
+  }
+
+  .post h3 {
+    font-size: 22px;
   }
 
   .post-meta {
-    grid-template-columns: auto 1fr auto;
     gap: 10px;
   }
 
@@ -1696,21 +1530,21 @@ justify-content: space-evenly;
 
   .post-meta strong {
     font-size: 15px;
-    margin-bottom: 7px;
   }
 
   .post-meta span {
     font-size: 13px;
   }
 
-  .post h3 {
-    font-size: 21px;
-  }
 
-  /* ---------- Footer ---------- */
+  /* ---------- FOOTER ---------- */
 
   .footer-email {
-    padding: 40px 18px;
+    padding: 40px 0;
+  }
+
+  .footer-links {
+    padding: 40px 0 30px;
   }
 
   .footer-grid {
@@ -1719,21 +1553,22 @@ justify-content: space-evenly;
     padding: 0;
   }
 
-  .footer-links {
-    padding: 40px 0 30px;
+  .f-label {
+    margin-bottom: 15px;
   }
 
   .newsletter {
     max-width: 100%;
+    padding-left: 15px;
   }
 
   .newsletter button {
-    width: 46px;
-    height: 46px;
+    width: 45px;
+    height: 45px;
   }
 
   .f-list {
-    gap: 13px;
+    gap: 12px;
   }
 
   .f-list a {
@@ -1746,15 +1581,10 @@ justify-content: space-evenly;
     margin-bottom: 20px;
   }
 
-  .f-add a,
-  .addresse {
-    font-size: 16px;
-  }
-
   .footer {
-    margin: 0 5px 5px;
+    margin: 0 6px 6px;
+    border-radius: 18px;
     padding: 30px 20px;
-    border-radius: 16px;
   }
 
   .footer-top {
@@ -1767,136 +1597,54 @@ justify-content: space-evenly;
   }
 
   .socials a {
-    padding: 14px 17px;
-    font-size: 13px;
-  }
-
-  .copy {
-    justify-self: start;
+    padding: 13px 17px;
+    font-size: 14px;
   }
 
   .copy-text {
     font-size: 14px;
-    line-height: 1.5;
   }
-
 }
 
 
-/* =========================================================
-   SMALL PHONE — 480px and below
-   ========================================================= */
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
 
-  .container {
-    padding: 0 15px;
-  }
-
-  .section {
-    padding: 60px 0;
-  }
-
-  .h2 {
-    font-size: 36px;
-  }
-
-  .lead {
-    font-size: 20px;
-  }
-
-  /* Hero */
-
-  .hero {
-    min-height: 620px;
+  .hero-title {
+    font-size: 40px;
   }
 
   .hero-inner {
-    padding: 95px 18px 30px;
-  }
-
-  .hero-title {
-    font-size: 41px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .hero-bottom p {
     font-size: 16px;
   }
 
-  /* Stats */
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 190px;
+  .h2 {
+    font-size: 34px;
   }
 
-  .stat-num {
-    font-size: 45px;
-  }
-
-  /* Testimonials */
-
-  .client-image {
-    height: 240px;
-  }
-
-  /* CTA */
-
-  .cta {
-    min-height: 680px;
+  .menu {
+    height: 310px;
   }
 
   .cta-inner {
     padding-top: 190px;
   }
 
-  .f1 {
-    width: 70px;
-    height: 70px;
-    left: 8px;
-  }
-
-  .f2 {
-    width: 50px;
-    height: 50px;
-  }
-
   .f3 {
     width: 85px;
     height: 110px;
-    right: 5px;
   }
 
   .f4 {
     width: 85px;
     height: 110px;
-    left: 5px;
   }
-
-  .f5 {
-    width: 50px;
-    height: 50px;
-  }
-
-  .f6 {
-    width: 70px;
-    height: 70px;
-    right: 8px;
-  }
-
-  /* Footer */
-
-  .newsletter {
-    padding-left: 15px;
-  }
-
-  .newsletter input {
-    font-size: 14px;
-  }
-
-  .socials a {
-    padding: 12px 14px;
-  }
-
 }
-
